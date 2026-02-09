@@ -1,0 +1,4 @@
+Invoking command in '/home/minis/ws_moveit2/build/srdfdom': /usr/bin/cmake --build /home/minis/ws_moveit2/build/srdfdom -- -j16 -l16
+Invoked command in '/home/minis/ws_moveit2/build/srdfdom' returned '0': /usr/bin/cmake --build /home/minis/ws_moveit2/build/srdfdom -- -j16 -l16
+Invoking command in '/home/minis/ws_moveit2/build/srdfdom': /usr/bin/cmake --install /home/minis/ws_moveit2/build/srdfdom
+Invoked command in '/home/minis/ws_moveit2/build/srdfdom' returned '0': /usr/bin/cmake --install /home/minis/ws_moveit2/build/srdfdom

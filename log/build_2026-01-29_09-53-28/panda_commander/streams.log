@@ -1,0 +1,24 @@
+[0.385s] Invoking command in '/home/minis/ws_moveit2/src/panda_commander': PYTHONPATH=/home/minis/ws_moveit2/build/panda_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/panda_commander build --build-base /home/minis/ws_moveit2/build/panda_commander/build install --record /home/minis/ws_moveit2/build/panda_commander/install.log --single-version-externally-managed install_data
+[0.521s] running egg_info
+[0.521s] writing ../../build/panda_commander/panda_commander.egg-info/PKG-INFO
+[0.521s] writing dependency_links to ../../build/panda_commander/panda_commander.egg-info/dependency_links.txt
+[0.521s] writing entry points to ../../build/panda_commander/panda_commander.egg-info/entry_points.txt
+[0.521s] writing requirements to ../../build/panda_commander/panda_commander.egg-info/requires.txt
+[0.521s] writing top-level names to ../../build/panda_commander/panda_commander.egg-info/top_level.txt
+[0.522s] reading manifest file '../../build/panda_commander/panda_commander.egg-info/SOURCES.txt'
+[0.522s] writing manifest file '../../build/panda_commander/panda_commander.egg-info/SOURCES.txt'
+[0.523s] running build
+[0.523s] running build_py
+[0.523s] copying panda_commander/arm_commander.py -> /home/minis/ws_moveit2/build/panda_commander/build/lib/panda_commander
+[0.523s] running install
+[0.523s] running install_lib
+[0.523s] copying /home/minis/ws_moveit2/build/panda_commander/build/lib/panda_commander/arm_commander.py -> /home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander
+[0.523s] byte-compiling /home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander/arm_commander.py to arm_commander.cpython-310.pyc
+[0.524s] running install_data
+[0.524s] running install_egg_info
+[0.525s] removing '/home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander-0.0.0-py3.10.egg-info' (and everything under it)
+[0.525s] Copying ../../build/panda_commander/panda_commander.egg-info to /home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander-0.0.0-py3.10.egg-info
+[0.526s] running install_scripts
+[0.541s] Installing arm_commander script to /home/minis/ws_moveit2/install/panda_commander/lib/panda_commander
+[0.541s] writing list of installed files to '/home/minis/ws_moveit2/build/panda_commander/install.log'
+[0.558s] Invoked command in '/home/minis/ws_moveit2/src/panda_commander' returned '0': PYTHONPATH=/home/minis/ws_moveit2/build/panda_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/panda_commander build --build-base /home/minis/ws_moveit2/build/panda_commander/build install --record /home/minis/ws_moveit2/build/panda_commander/install.log --single-version-externally-managed install_data

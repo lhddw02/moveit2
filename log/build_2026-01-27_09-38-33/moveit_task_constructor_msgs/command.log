@@ -1,0 +1,4 @@
+Invoking command in '/home/minis/ws_moveit2/build/moveit_task_constructor_msgs': /usr/bin/cmake --build /home/minis/ws_moveit2/build/moveit_task_constructor_msgs -- -j16 -l16
+Invoked command in '/home/minis/ws_moveit2/build/moveit_task_constructor_msgs' returned '0': /usr/bin/cmake --build /home/minis/ws_moveit2/build/moveit_task_constructor_msgs -- -j16 -l16
+Invoking command in '/home/minis/ws_moveit2/build/moveit_task_constructor_msgs': /usr/bin/cmake --install /home/minis/ws_moveit2/build/moveit_task_constructor_msgs
+Invoked command in '/home/minis/ws_moveit2/build/moveit_task_constructor_msgs' returned '0': /usr/bin/cmake --install /home/minis/ws_moveit2/build/moveit_task_constructor_msgs

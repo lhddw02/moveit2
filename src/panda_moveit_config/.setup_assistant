@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+    URDF:
+        package: panda_description
+        relative_path: urdf/panda.urdf
+        xacro_args: ""
+    SRDF:
+        relative_path: config/panda.srdf
+    CONFIG:
+        author_name: Luka
+        author_email: lhddw02@gmail.com
+            

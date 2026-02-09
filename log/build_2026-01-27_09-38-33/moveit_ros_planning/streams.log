@@ -1,0 +1,169 @@
+[0.012s] Invoking command in '/home/minis/ws_moveit2/build/moveit_ros_planning': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/moveit_configs_utils:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common:/home/minis/ws_moveit2/install/launch_param_builder CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common LD_LIBRARY_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/minis/ws_moveit2/install/moveit_core/lib:/home/minis/ws_moveit2/install/srdfdom/lib PATH=/home/minis/ws_moveit2/install/moveit_core/bin:${PATH} PYTHONPATH=/home/minis/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/minis/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages /usr/bin/cmake --build /home/minis/ws_moveit2/build/moveit_ros_planning -- -j16 -l16
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target moveit_collision_plugin_loader[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target moveit_planning_pipeline[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target moveit_rdf_loader[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target moveit_list_request_adapter_plugins[0m
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target moveit_default_planning_request_adapter_plugins[0m
+[0.061s] [  5%] Built target gtest_main
+[0.061s] [  5%] Built target gmock_main
+[0.062s] [  8%] Built target gtest
+[0.062s] [ 13%] Built target gmock
+[0.067s] [ 17%] Built target moveit_rdf_loader
+[0.067s] [ 20%] Built target moveit_collision_plugin_loader
+[0.067s] [ 23%] Built target moveit_list_request_adapter_plugins
+[0.068s] [ 26%] Built target moveit_planning_pipeline
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target moveit_kinematics_plugin_loader[0m
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target moveit_constraint_sampler_manager_loader[0m
+[0.090s] [ 29%] Built target moveit_kinematics_plugin_loader
+[0.091s] [ 32%] Built target moveit_constraint_sampler_manager_loader
+[0.099s] [ 48%] Built target moveit_default_planning_request_adapter_plugins
+[0.100s] [35m[1mConsolidate compiler generated dependencies of target moveit_robot_model_loader[0m
+[0.116s] [ 51%] Built target moveit_robot_model_loader
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target moveit_print_planning_model_info[0m
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target moveit_planning_scene_monitor[0m
+[0.140s] [ 54%] Built target moveit_print_planning_model_info
+[0.162s] [ 63%] Built target moveit_planning_scene_monitor
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target trajectory_monitor_tests[0m
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target current_state_monitor_tests[0m
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target moveit_display_random_state[0m
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target moveit_print_planning_scene_info[0m
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target planning_scene_monitor_test[0m
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target demo_scene[0m
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target moveit_trajectory_execution_manager[0m
+[0.173s] [35m[1mConsolidate compiler generated dependencies of target moveit_evaluate_collision_checking_speed[0m
+[0.173s] [35m[1mConsolidate compiler generated dependencies of target moveit_publish_scene_from_text[0m
+[0.173s] [35m[1mConsolidate compiler generated dependencies of target moveit_visualize_robot_collision_volume[0m
+[0.191s] [ 75%] Built target planning_scene_monitor_test
+[0.191s] [ 75%] Built target trajectory_monitor_tests
+[0.191s] [ 75%] Built target moveit_print_planning_scene_info
+[0.191s] [ 75%] Built target current_state_monitor_tests
+[0.191s] [ 77%] Built target moveit_trajectory_execution_manager
+[0.191s] [ 80%] Built target moveit_publish_scene_from_text
+[0.192s] [ 83%] Built target demo_scene
+[0.193s] [ 86%] Built target moveit_display_random_state
+[0.196s] [ 92%] Built target moveit_visualize_robot_collision_volume
+[0.196s] [ 92%] Built target moveit_evaluate_collision_checking_speed
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target moveit_plan_execution[0m
+[0.202s] [35m[1mConsolidate compiler generated dependencies of target moveit_cpp[0m
+[0.222s] [ 95%] Built target moveit_plan_execution
+[0.228s] [100%] Built target moveit_cpp
+[0.236s] Invoked command in '/home/minis/ws_moveit2/build/moveit_ros_planning' returned '0': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/moveit_configs_utils:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common:/home/minis/ws_moveit2/install/launch_param_builder CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common LD_LIBRARY_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/minis/ws_moveit2/install/moveit_core/lib:/home/minis/ws_moveit2/install/srdfdom/lib PATH=/home/minis/ws_moveit2/install/moveit_core/bin:${PATH} PYTHONPATH=/home/minis/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/minis/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages /usr/bin/cmake --build /home/minis/ws_moveit2/build/moveit_ros_planning -- -j16 -l16
+[0.238s] Invoking command in '/home/minis/ws_moveit2/build/moveit_ros_planning': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/moveit_configs_utils:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common:/home/minis/ws_moveit2/install/launch_param_builder CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common LD_LIBRARY_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/minis/ws_moveit2/install/moveit_core/lib:/home/minis/ws_moveit2/install/srdfdom/lib PATH=/home/minis/ws_moveit2/install/moveit_core/bin:${PATH} PYTHONPATH=/home/minis/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/minis/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages /usr/bin/cmake --install /home/minis/ws_moveit2/build/moveit_ros_planning
+[0.244s] -- Install configuration: "Release"
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/rdf_loader
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/rdf_loader/rdf_loader.h
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/rdf_loader/synchronized_string_parameter.h
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/kermit.urdf
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/gonzo.urdf
+[0.244s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/kermit.srdf
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/robin.srdf.xacro
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/gonzo.srdf
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/launch
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/launch/test_rdf_integration.test.py
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/collision_plugin_loader
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/collision_plugin_loader/collision_plugin_loader.h
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/kinematics_plugin_loader
+[0.245s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/kinematics_plugin_loader/kinematics_plugin_loader.h
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/robot_model_loader
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/robot_model_loader/robot_model_loader.h
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/constraint_sampler_manager_loader
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/constraint_sampler_manager_loader/constraint_sampler_manager_loader.h
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_pipeline
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_pipeline/planning_pipeline.h
+[0.246s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit_planning_pipeline_export.h
+[0.247s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_list_request_adapter_plugins
+[0.247s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/demo_scene
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_scene_monitor
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_scene_monitor/trajectory_monitor_middleware_handle.hpp
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_scene_monitor/current_state_monitor_middleware_handle.hpp
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_scene_monitor/trajectory_monitor.h
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_scene_monitor/current_state_monitor.h
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/planning_scene_monitor/planning_scene_monitor.h
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit_planning_scene_monitor_export.h
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_model_info
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_scene_info
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_display_random_state
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_visualize_robot_collision_volume
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_evaluate_collision_checking_speed
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/trajectory_execution_manager
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/trajectory_execution_manager/trajectory_execution_manager.h
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit_trajectory_execution_manager_export.h
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/plan_execution
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/plan_execution/plan_execution.h
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/plan_execution/plan_representation.h
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/moveit_cpp
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/include/moveit/moveit_cpp/moveit_cpp.h
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_rdf_loader.so.2.5.9
+[0.251s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_rdf_loader.so
+[0.252s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_kinematics_plugin_loader.so.2.5.9
+[0.252s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_kinematics_plugin_loader.so
+[0.252s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_robot_model_loader.so.2.5.9
+[0.252s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_robot_model_loader.so
+[0.253s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_constraint_sampler_manager_loader.so.2.5.9
+[0.253s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_constraint_sampler_manager_loader.so
+[0.253s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_planning_pipeline.so.2.5.9
+[0.253s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_planning_pipeline.so
+[0.254s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_trajectory_execution_manager.so.2.5.9
+[0.254s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_trajectory_execution_manager.so
+[0.254s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_plan_execution.so.2.5.9
+[0.254s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_plan_execution.so
+[0.254s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_planning_scene_monitor.so.2.5.9
+[0.255s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_planning_scene_monitor.so
+[0.255s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_collision_plugin_loader.so.2.5.9
+[0.255s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_collision_plugin_loader.so
+[0.255s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_default_planning_request_adapter_plugins.so.2.5.9
+[0.255s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_default_planning_request_adapter_plugins.so
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_cpp.so.2.5.9
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/lib/libmoveit_cpp.so
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/environment/library_path.sh
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/environment/library_path.dsv
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/planning_request_adapters_plugin_description.xml
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/ament_index/resource_index/package_run_dependencies/moveit_ros_planning
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/ament_index/resource_index/parent_prefix_path/moveit_ros_planning
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/environment/ament_prefix_path.sh
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/environment/ament_prefix_path.dsv
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/environment/path.sh
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/environment/path.dsv
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.bash
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.sh
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.zsh
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.dsv
+[0.256s] -- Installing: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/package.dsv
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/ament_index/resource_index/packages/moveit_ros_planning
+[0.256s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_ros_planning
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/export_moveit_ros_planningExport.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/export_moveit_ros_planningExport-release.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/ConfigExtras.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/ament_cmake_export_targets-extras.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/moveit_ros_planningConfig.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/cmake/moveit_ros_planningConfig-version.cmake
+[0.257s] -- Up-to-date: /home/minis/ws_moveit2/install/moveit_ros_planning/share/moveit_ros_planning/package.xml
+[0.259s] Invoked command in '/home/minis/ws_moveit2/build/moveit_ros_planning' returned '0': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/moveit_configs_utils:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common:/home/minis/ws_moveit2/install/launch_param_builder CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/minis/ws_moveit2/install/moveit_core:/home/minis/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/minis/ws_moveit2/install/srdfdom:/home/minis/ws_moveit2/install/moveit_resources_pr2_description:/home/minis/ws_moveit2/install/moveit_resources_panda_description:/home/minis/ws_moveit2/install/moveit_common LD_LIBRARY_PATH=/home/minis/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/minis/ws_moveit2/install/moveit_core/lib:/home/minis/ws_moveit2/install/srdfdom/lib PATH=/home/minis/ws_moveit2/install/moveit_core/bin:${PATH} PYTHONPATH=/home/minis/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/minis/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages /usr/bin/cmake --install /home/minis/ws_moveit2/build/moveit_ros_planning

@@ -1,0 +1,32 @@
+[0.041s] Invoking command in '/home/minis/ws_moveit2/build/rviz_marker_tools': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common /usr/bin/cmake --build /home/minis/ws_moveit2/build/rviz_marker_tools -- -j16 -l16
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target rviz_marker_tools[0m
+[0.086s] [100%] Built target rviz_marker_tools
+[0.100s] Invoked command in '/home/minis/ws_moveit2/build/rviz_marker_tools' returned '0': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common /usr/bin/cmake --build /home/minis/ws_moveit2/build/rviz_marker_tools -- -j16 -l16
+[0.101s] Invoking command in '/home/minis/ws_moveit2/build/rviz_marker_tools': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common /usr/bin/cmake --install /home/minis/ws_moveit2/build/rviz_marker_tools
+[0.111s] -- Install configuration: "Release"
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/include
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/include/rviz_marker_tools
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/include/rviz_marker_tools/marker_creation.h
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/lib/librviz_marker_tools.so
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.sh
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.dsv
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/ament_index/resource_index/package_run_dependencies/rviz_marker_tools
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/ament_index/resource_index/parent_prefix_path/rviz_marker_tools
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.sh
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.dsv
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.sh
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.dsv
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.bash
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.sh
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.zsh
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.dsv
+[0.111s] -- Installing: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/package.dsv
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/ament_index/resource_index/packages/rviz_marker_tools
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport.cmake
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport-release.cmake
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_targets-extras.cmake
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.111s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig.cmake
+[0.112s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig-version.cmake
+[0.112s] -- Up-to-date: /home/minis/ws_moveit2/install/rviz_marker_tools/share/rviz_marker_tools/package.xml
+[0.115s] Invoked command in '/home/minis/ws_moveit2/build/rviz_marker_tools' returned '0': AMENT_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common CMAKE_PREFIX_PATH=/home/minis/ws_moveit2/install/moveit_common /usr/bin/cmake --install /home/minis/ws_moveit2/build/rviz_marker_tools

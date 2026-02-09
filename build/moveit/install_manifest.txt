@@ -1,0 +1,15 @@
+/home/minis/ws_moveit2/install/moveit/share/ament_index/resource_index/package_run_dependencies/moveit
+/home/minis/ws_moveit2/install/moveit/share/ament_index/resource_index/parent_prefix_path/moveit
+/home/minis/ws_moveit2/install/moveit/share/moveit/environment/ament_prefix_path.sh
+/home/minis/ws_moveit2/install/moveit/share/moveit/environment/ament_prefix_path.dsv
+/home/minis/ws_moveit2/install/moveit/share/moveit/environment/path.sh
+/home/minis/ws_moveit2/install/moveit/share/moveit/environment/path.dsv
+/home/minis/ws_moveit2/install/moveit/share/moveit/local_setup.bash
+/home/minis/ws_moveit2/install/moveit/share/moveit/local_setup.sh
+/home/minis/ws_moveit2/install/moveit/share/moveit/local_setup.zsh
+/home/minis/ws_moveit2/install/moveit/share/moveit/local_setup.dsv
+/home/minis/ws_moveit2/install/moveit/share/moveit/package.dsv
+/home/minis/ws_moveit2/install/moveit/share/ament_index/resource_index/packages/moveit
+/home/minis/ws_moveit2/install/moveit/share/moveit/cmake/moveitConfig.cmake
+/home/minis/ws_moveit2/install/moveit/share/moveit/cmake/moveitConfig-version.cmake
+/home/minis/ws_moveit2/install/moveit/share/moveit/package.xml

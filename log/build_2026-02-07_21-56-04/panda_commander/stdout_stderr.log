@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/panda_commander/panda_commander.egg-info/PKG-INFO
+writing dependency_links to ../../build/panda_commander/panda_commander.egg-info/dependency_links.txt
+writing entry points to ../../build/panda_commander/panda_commander.egg-info/entry_points.txt
+writing requirements to ../../build/panda_commander/panda_commander.egg-info/requires.txt
+writing top-level names to ../../build/panda_commander/panda_commander.egg-info/top_level.txt
+reading manifest file '../../build/panda_commander/panda_commander.egg-info/SOURCES.txt'
+writing manifest file '../../build/panda_commander/panda_commander.egg-info/SOURCES.txt'
+running build
+running build_py
+copying panda_commander/arm_commander.py -> /home/minis/ws_moveit2/build/panda_commander/build/lib/panda_commander
+running install
+running install_lib
+copying /home/minis/ws_moveit2/build/panda_commander/build/lib/panda_commander/arm_commander.py -> /home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander
+byte-compiling /home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander/arm_commander.py to arm_commander.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/panda_commander/panda_commander.egg-info to /home/minis/ws_moveit2/install/panda_commander/lib/python3.10/site-packages/panda_commander-0.0.0-py3.10.egg-info
+running install_scripts
+Installing arm_commander script to /home/minis/ws_moveit2/install/panda_commander/lib/panda_commander
+writing list of installed files to '/home/minis/ws_moveit2/build/panda_commander/install.log'

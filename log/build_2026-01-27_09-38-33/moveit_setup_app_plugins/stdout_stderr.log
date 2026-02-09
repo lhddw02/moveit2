@@ -1,0 +1,16 @@
+[  4%] [34m[1mAutomatic MOC for target gtest[0m
+[  8%] [34m[1mAutomatic MOC for target moveit_setup_app_plugins[0m
+[ 12%] [34m[1mAutomatic MOC for target gtest_main[0m
+[ 12%] Built target gtest_autogen
+[ 12%] Built target moveit_setup_app_plugins_autogen
+[ 12%] Built target gtest_main_autogen
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target moveit_setup_app_plugins[0m
+[ 16%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 28%] Built target gtest_main
+[ 32%] [32mBuilding CXX object CMakeFiles/moveit_setup_app_plugins.dir/src/launches_widget.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/moveit_setup_app_plugins.dir/include/moveit_setup_app_plugins/moc_perception_widget.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/moveit_setup_app_plugins.dir/src/perception_widget.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/moveit_setup_app_plugins.dir/include/moveit_setup_app_plugins/moc_launches_widget.cpp.o[0m
+[ 52%] Built target gtest

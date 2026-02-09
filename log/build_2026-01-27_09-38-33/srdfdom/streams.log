@@ -1,0 +1,63 @@
+[0.018s] Invoking command in '/home/minis/ws_moveit2/build/srdfdom': /usr/bin/cmake --build /home/minis/ws_moveit2/build/srdfdom -- -j16 -l16
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target srdfdom[0m
+[0.139s] [  9%] Built target ament_cmake_python_copy_srdfdom
+[0.139s] [ 27%] Built target gtest
+[0.139s] [ 36%] Built target gtest_main
+[0.139s] [ 63%] Built target srdfdom
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target test_cpp_C[0m
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target test_cpp_nl_NL.UTF-8[0m
+[0.139s] [ 81%] Built target test_cpp_nl_NL.UTF-8
+[0.139s] [100%] Built target test_cpp_C
+[0.183s] running egg_info
+[0.184s] writing srdfdom.egg-info/PKG-INFO
+[0.184s] writing dependency_links to srdfdom.egg-info/dependency_links.txt
+[0.184s] writing top-level names to srdfdom.egg-info/top_level.txt
+[0.187s] reading manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.187s] writing manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.212s] [100%] Built target ament_cmake_python_build_srdfdom_egg
+[0.241s] Invoked command in '/home/minis/ws_moveit2/build/srdfdom' returned '0': /usr/bin/cmake --build /home/minis/ws_moveit2/build/srdfdom -- -j16 -l16
+[0.242s] Invoking command in '/home/minis/ws_moveit2/build/srdfdom': /usr/bin/cmake --install /home/minis/ws_moveit2/build/srdfdom
+[0.248s] -- Install configuration: "Release"
+[0.248s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/lib/libsrdfdom.so.2.0.8
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/lib/libsrdfdom.so
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/include/srdfdom
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/include/srdfdom/srdfdom
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/include/srdfdom/srdfdom/visibility_control.h
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/include/srdfdom/srdfdom/model.h
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/include/srdfdom/srdfdom/srdf_writer.h
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/lib/srdfdom/display_srdf
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/pythonpath.sh
+[0.249s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/pythonpath.dsv
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info
+[0.250s] -- Installing: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/dependency_links.txt
+[0.250s] -- Installing: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/top_level.txt
+[0.250s] -- Installing: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/SOURCES.txt
+[0.250s] -- Installing: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/PKG-INFO
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom/srdf.py
+[0.250s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom/__init__.py
+[0.270s] Listing '/home/minis/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom'...
+[0.274s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/library_path.sh
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/library_path.dsv
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/ament_index/resource_index/package_run_dependencies/srdfdom
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/ament_index/resource_index/parent_prefix_path/srdfdom
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/ament_prefix_path.sh
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/ament_prefix_path.dsv
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/path.sh
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/environment/path.dsv
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/local_setup.bash
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/local_setup.sh
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/local_setup.zsh
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/local_setup.dsv
+[0.275s] -- Installing: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/package.dsv
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/ament_index/resource_index/packages/srdfdom
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/cmake/srdfdomTargetsExport.cmake
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/cmake/srdfdomTargetsExport-release.cmake
+[0.275s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/cmake/ament_cmake_export_targets-extras.cmake
+[0.276s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.276s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/cmake/srdfdomConfig.cmake
+[0.276s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/cmake/srdfdomConfig-version.cmake
+[0.276s] -- Up-to-date: /home/minis/ws_moveit2/install/srdfdom/share/srdfdom/package.xml
+[0.284s] Invoked command in '/home/minis/ws_moveit2/build/srdfdom' returned '0': /usr/bin/cmake --install /home/minis/ws_moveit2/build/srdfdom

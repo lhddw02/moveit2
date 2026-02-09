@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:16 (install):
+  install does not recognize sub-command PROGRAM
+
+[0m

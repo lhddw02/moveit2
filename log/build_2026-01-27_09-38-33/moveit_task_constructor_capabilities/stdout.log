@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/moveit_task_constructor_capabilities.dir/src/execute_task_solution_capability.cpp.o[0m
+[ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 50%] Built target gtest_main

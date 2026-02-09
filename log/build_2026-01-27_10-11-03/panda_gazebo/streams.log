@@ -1,0 +1,171 @@
+[0.012s] Invoking command in '/home/minis/ws_moveit2/build/panda_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/minis/ws_moveit2/src/panda_gazebo -DCMAKE_INSTALL_PREFIX=/home/minis/ws_moveit2/install/panda_gazebo
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.085s] -- The CXX compiler identification is GNU 11.4.0
+[0.091s] -- Detecting C compiler ABI info
+[0.141s] -- Detecting C compiler ABI info - done
+[0.145s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.145s] -- Detecting C compile features
+[0.145s] -- Detecting C compile features - done
+[0.147s] -- Detecting CXX compiler ABI info
+[0.201s] -- Detecting CXX compiler ABI info - done
+[0.206s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.206s] -- Detecting CXX compile features
+[0.206s] -- Detecting CXX compile features - done
+[0.208s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.302s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.359s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.368s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[0.392s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.395s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.401s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.408s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.418s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.454s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.456s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.457s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.485s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.487s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.562s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.580s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.610s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.616s] -- Looking for pthread.h
+[0.672s] -- Looking for pthread.h - found
+[0.672s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.727s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.728s] -- Found Threads: TRUE  
+[0.848s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.862s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.862s] -- Checking for module 'bullet>=2.82'
+[0.872s] --   Found bullet, version 3.05
+[0.964s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.012s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.026s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.046s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.063s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.068s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.074s] -- Searching for dependencies of ignition-math6
+[1.075s] -- Looking for OGRE...
+[1.076s] -- OGRE_PREFIX_WATCH changed.
+[1.080s] -- Checking for module 'OGRE'
+[1.091s] --   Found OGRE, version 1.9.0
+[1.126s] -- Found Ogre Ghadamon (1.9.0)
+[1.130s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.136s] -- Looking for OGRE_Paging...
+[1.139s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.139s] -- Looking for OGRE_Terrain...
+[1.142s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.142s] -- Looking for OGRE_Property...
+[1.145s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.145s] -- Looking for OGRE_RTShaderSystem...
+[1.148s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.148s] -- Looking for OGRE_Volume...
+[1.151s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.151s] -- Looking for OGRE_Overlay...
+[1.154s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.217s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.219s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.220s] -- Searching for dependencies of ignition-transport8
+[1.236s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.244s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.248s] -- Checking for module 'libzmq >= 4'
+[1.262s] --   Found libzmq , version 4.3.4
+[1.292s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.296s] -- Checking for module 'uuid'
+[1.308s] --   Found uuid, version 2.37.2
+[1.339s] -- Found UUID: TRUE  
+[1.341s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.342s] -- Searching for dependencies of ignition-msgs5
+[1.356s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.362s] -- Checking for module 'tinyxml2'
+[1.374s] --   Found tinyxml2, version 9.0.0
+[1.404s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.406s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.407s] -- Searching for dependencies of ignition-common3
+[1.407s] -- Looking for dlfcn.h - found
+[1.408s] -- Looking for libdl - found
+[1.408s] -- Found DL: TRUE  
+[1.418s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.418s] -- Searching for <ignition-common3> component [graphics]
+[1.420s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.420s] -- Searching for dependencies of ignition-common3-graphics
+[1.421s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.424s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.424s] -- Searching for dependencies of ignition-fuel_tools4
+[1.495s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.504s] -- Checking for module 'jsoncpp'
+[1.515s] --   Found jsoncpp, version 1.9.5
+[1.543s] -- Found JSONCPP: TRUE  
+[1.547s] -- Checking for module 'libzip'
+[1.558s] --   Found libzip, version 1.7.3
+[1.591s] -- Found ZIP: TRUE  
+[1.592s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.592s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.592s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.596s] -- Gazebo version: 11.10
+[1.596s] -- Checking for module 'tbb'
+[1.608s] --   Found tbb, version 2021.5.0
+[1.643s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[1.644s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.692s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.692s] -- Added test 'lint_cmake' to check CMake code style
+[1.693s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.694s] -- Added test 'xmllint' to check XML markup files
+[1.695s] -- Configuring done
+[1.700s] -- Generating done
+[1.701s] -- Build files have been written to: /home/minis/ws_moveit2/build/panda_gazebo
+[1.712s] Invoked command in '/home/minis/ws_moveit2/build/panda_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/minis/ws_moveit2/src/panda_gazebo -DCMAKE_INSTALL_PREFIX=/home/minis/ws_moveit2/install/panda_gazebo
+[1.713s] Invoking command in '/home/minis/ws_moveit2/build/panda_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minis/ws_moveit2/build/panda_gazebo -- -j16 -l16
+[1.749s] Invoked command in '/home/minis/ws_moveit2/build/panda_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minis/ws_moveit2/build/panda_gazebo -- -j16 -l16
+[1.750s] Invoking command in '/home/minis/ws_moveit2/build/panda_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/minis/ws_moveit2/build/panda_gazebo
+[1.757s] -- Install configuration: ""
+[1.757s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/config
+[1.757s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/config/ros2_controllers.yaml
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/include
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/include/panda_gazebo
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/launch
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/launch/panda_gazebo.launch.py
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/src
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds
+[1.758s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/test_world.world
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/arm_on_the_table.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model-1_2.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model.config
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model-1_3.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model-1_4.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model-1_2.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model.config
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model-1_3.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model-1_4.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt/meshes
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt/meshes/bolt.dae
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt/meshes/bolt.stl
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt/model.config
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt/materials
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/bolt/model.sdf
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/table
+[1.759s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/table/model-1_2.sdf
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/table/model.config
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/table/model-1_3.sdf
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/table/model-1_4.sdf
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/table/model.sdf
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/ament_index/resource_index/package_run_dependencies/panda_gazebo
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/ament_index/resource_index/parent_prefix_path/panda_gazebo
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/environment/ament_prefix_path.sh
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/environment/ament_prefix_path.dsv
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/environment/path.sh
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/environment/path.dsv
+[1.760s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/local_setup.bash
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/local_setup.sh
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/local_setup.zsh
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/local_setup.dsv
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/package.dsv
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/ament_index/resource_index/packages/panda_gazebo
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/cmake/panda_gazeboConfig.cmake
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/cmake/panda_gazeboConfig-version.cmake
+[1.761s] -- Installing: /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/package.xml
+[1.763s] Invoked command in '/home/minis/ws_moveit2/build/panda_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/minis/ws_moveit2/build/panda_gazebo

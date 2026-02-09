@@ -1,0 +1,3 @@
+[console_scripts]
+arm_commander = panda_commander.arm_commander:main
+

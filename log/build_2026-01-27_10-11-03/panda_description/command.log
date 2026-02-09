@@ -1,0 +1,6 @@
+Invoking command in '/home/minis/ws_moveit2/build/panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/minis/ws_moveit2/src/panda_description -DCMAKE_INSTALL_PREFIX=/home/minis/ws_moveit2/install/panda_description
+Invoked command in '/home/minis/ws_moveit2/build/panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/minis/ws_moveit2/src/panda_description -DCMAKE_INSTALL_PREFIX=/home/minis/ws_moveit2/install/panda_description
+Invoking command in '/home/minis/ws_moveit2/build/panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minis/ws_moveit2/build/panda_description -- -j16 -l16
+Invoked command in '/home/minis/ws_moveit2/build/panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minis/ws_moveit2/build/panda_description -- -j16 -l16
+Invoking command in '/home/minis/ws_moveit2/build/panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/minis/ws_moveit2/build/panda_description
+Invoked command in '/home/minis/ws_moveit2/build/panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/minis/ws_moveit2/build/panda_description
