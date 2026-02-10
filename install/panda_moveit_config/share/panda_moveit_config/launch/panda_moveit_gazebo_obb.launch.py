@@ -1,24 +1,31 @@
 import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import ExecuteProcess
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
 from ament_index_python.packages import get_package_share_directory
 import xacro
 from moveit_configs_utils import MoveItConfigsBuilder
 
 def generate_launch_description():
 
-    # --- Load URDF from panda_description ---
-    pkg_panda_description = get_package_share_directory("panda_description")
-    urdf_file = os.path.join(pkg_panda_description, "urdf", "panda_description_gazebo.xacro")
-    # doc = xacro.parse(open(urdf_file))
-    # xacro.process_doc(doc)
-    # robot_description = {"robot_description": doc.toxml()}
 
-    robot_name_in_model = 'panda'
+
     pkg_moveit_config = get_package_share_directory("panda_moveit_config")
-    
-    # gazebo
+    pkg_robot_description = get_package_share_directory("panda_description")
+    urdf_name = "panda_description_gazebo.xacro"
+    urdf_file = os.path.join(pkg_robot_description, f'urdf/{urdf_name}')
+    srdf_file = os.path.join(pkg_moveit_config, "config", "panda.srdf")
+    trajectory_execution_file = os.path.join(
+        pkg_moveit_config, "config", "gripper_moveit_controllers.yaml"
+    )
+
+    # rviz config file
+    default_rviz_config_path = os.path.join(pkg_robot_description, 'rviz/panda_ctrl.rviz')
+
+    # rviz
+    rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),
+                                     description='Absolute path to rviz config file')
+
     # gazebo world file
     world_file = os.path.join(
         get_package_share_directory('panda_gazebo'),
@@ -26,22 +33,29 @@ def generate_launch_description():
         'test_world.world'
     )
 
+    
+
+
     # Start Gazebo server
     start_gazebo_cmd =  ExecuteProcess(
         cmd=['gazebo', '--verbose','-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_file],
         output='screen',
         
     )
-    # gazebo
 
-    # moveit
+    doc = xacro.parse(open(urdf_file))
+    xacro.process_doc(doc)
+    panda_desc = doc.toxml()
+    params = {'robot_description': panda_desc}
+
+
     # --- Build MoveIt config from panda_moveit_config ---
     moveit_config = (
         MoveItConfigsBuilder("panda", package_name="panda_moveit_config")
-        .robot_description(file_path= urdf_file)  
+        #.robot_description(file_path= urdf_file)  
         #.robot_description_semantic(file_path= srdf_file)
         #.trajectory_execution(file_path= trajectory_execution_file)
-        #.robot_description(file_path="config/panda.urdf.xacro")   # MoveIt’s internal copy
+        .robot_description(file_path="config/panda.urdf.xacro")   # MoveIt’s internal copy
         .robot_description_semantic(file_path="config/panda.srdf")
         .robot_description_kinematics(file_path="config/kinematics.yaml")
         .trajectory_execution(file_path="config/gripper_moveit_controllers.yaml")
@@ -50,10 +64,10 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
-    # moveit
+    #moveit_config.planning_pipelines["default_planning_pipeline"] = "ompl"
 
     # --- Nodes ---
-    robot_state_publisher_node = Node(
+    robot_state_publisher = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         parameters=[moveit_config.robot_description],
@@ -65,6 +79,18 @@ def generate_launch_description():
         executable='joint_state_publisher',
     )
 
+    # Launch the robot, 通过robot_description话题进行模型内容获取从而在gazebo中生成模型
+    spawn_entity_cmd = Node(
+        package='gazebo_ros', 
+        executable='spawn_entity.py',
+        arguments=[
+            '-entity', 'panda',  
+            '-topic', 'robot_description',
+            '-x', '0.0', 
+            '-y', '0.0', 
+            '-z', '0.0'], 
+        output='screen')
+
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
@@ -72,16 +98,6 @@ def generate_launch_description():
         parameters=[moveit_config.to_dict(),
                     {"use_sim_time": True},
                     {"planning_plugin": "chomp_interface/CHOMPPlanner"},
-                    ],
-    )
-
-    moveit_py_node = Node(
-        name="moveit_py",
-        package="panda_moveit_config",
-        executable="arm_control_from_UI.py",
-        output="both",
-        parameters=[moveit_config.to_dict(),
-                    {"use_sim_time": True},
                     ],
     )
 
@@ -111,7 +127,7 @@ def generate_launch_description():
 
     # ros2_control node
     ros2_controllers_path = os.path.join(
-        get_package_share_directory("panda_moveit_config"),
+        get_package_share_directory("panda_gazebo"), #panda_moveit_config
         "config",
         "ros2_controllers.yaml",
     )
@@ -119,18 +135,6 @@ def generate_launch_description():
     initial_positions_path = os.path.join( 
         get_package_share_directory("panda_moveit_config"), "config", "initial_positions.yaml", 
     )
-
-    # Gazebo spawn Node
-    spawn_entity_cmd = Node(
-        package='gazebo_ros', 
-        executable='spawn_entity.py',
-        arguments=[
-            '-entity', robot_name_in_model,  
-            '-topic', 'robot_description',
-            '-x', '0.0', 
-            '-y', '0.0', 
-            '-z', '0.0'], 
-        output='screen')
 
     ros2_control_node = Node(
         package="controller_manager",
@@ -157,22 +161,16 @@ def generate_launch_description():
         arguments=["panda_hand_controller", "-c", "/controller_manager"],
     )
 
-    ld = LaunchDescription()
-
-    ld.add_action(start_gazebo_cmd)
-
-    ld.add_action(robot_state_publisher_node)
-    ld.add_action(joint_state_publisher_node)
-    
-    ld.add_action(move_group_node)
-    # ld.add_action(moveit_py_node)
-    ld.add_action(rviz_node)
-    ld.add_action(static_tf_node)
-    ld.add_action(spawn_entity_cmd)
-    ld.add_action(ros2_control_node)
-    ld.add_action(joint_state_broadcaster_spawner)
-    ld.add_action(panda_arm_controller_spawner)
-    ld.add_action(panda_hand_controller_spawner)
-
-
-    return ld
+    return LaunchDescription([
+        start_gazebo_cmd,
+        #robot_state_publisher,
+        #joint_state_publisher_node,
+        spawn_entity_cmd,
+        static_tf_node,
+        move_group_node,
+        rviz_node,
+        ros2_control_node,
+        joint_state_broadcaster_spawner,
+        panda_arm_controller_spawner,
+        panda_hand_controller_spawner,
+    ])
