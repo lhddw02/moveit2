@@ -39,7 +39,7 @@ def generate_launch_description():
     world_file = os.path.join(
         get_package_share_directory('panda_gazebo'),
         'worlds',
-        'test_world.world'
+        'on_the_table.world'
     )
 
     
@@ -80,9 +80,12 @@ def generate_launch_description():
         arguments=[
             '-entity', robot_name_in_model,  
             '-topic', 'robot_description',
-            '-x', '0.0', 
-            '-y', '0.0', 
-            '-z', '0.0'], 
+            '-x', '0.05', 
+            '-y', '0.05', 
+            '-z', '1.02',
+            '-R', '0.0',
+            '-P', '0.0',
+            '-Y', '0.0',], 
         output='screen')
 
     # 关节状态发布器

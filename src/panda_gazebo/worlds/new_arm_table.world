@@ -1,0 +1,52 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <gravity>0 0 -9.8</gravity>
+    
+    <model name='ground_plane'>
+      <static>1</static>
+      <include>
+        <uri>model://ground_plane</uri>
+      </include>
+    </model>
+    
+    
+    <model name='table'>
+      <static>1</static>
+      <include>
+        <uri>model://table</uri>
+      </include>
+      <pose>0.27426 -0.133657 0 0 -0 0</pose>
+    </model>
+    
+    
+    
+    
+    
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.21593 -0.741005 2.77495 0 1.07564 1.7202</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+  </world>
+</sdf>

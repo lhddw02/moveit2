@@ -1,113 +1,130 @@
+import os
+from launch import LaunchDescription
+from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
+import xacro
 from moveit_configs_utils import MoveItConfigsBuilder
 
-from launch import LaunchDescription
-from launch.actions import (
-    DeclareLaunchArgument,
-    IncludeLaunchDescription,
-)
-from moveit_configs_utils.launch_utils import (
-    add_debuggable_node,
-    DeclareBooleanLaunchArg,
-)
-from launch.substitutions import LaunchConfiguration
-from launch_ros.parameter_descriptions import ParameterValue
-
-
 def generate_launch_description():
-    moveit_config = MoveItConfigsBuilder("panda", package_name="panda_moveit_config").to_moveit_configs()
 
-    ld = LaunchDescription()
+    # --- Load URDF from panda_description ---
+    # pkg_panda_description = get_package_share_directory("panda_description")
+    # urdf_file = os.path.join(pkg_panda_description, "urdf", "panda_description_gazebo.xacro")
+    # doc = xacro.parse(open(urdf_file))
+    # xacro.process_doc(doc)
+    # robot_description = {"robot_description": doc.toxml()}
 
-    # 启动move_group
-    my_generate_move_group_launch(ld, moveit_config)
-    # 启动rviz
-    my_generate_moveit_rviz_launch(ld, moveit_config)
-
-    return ld
-
-
-def my_generate_move_group_launch(ld, moveit_config):
-
-    ld.add_action(DeclareBooleanLaunchArg("debug", default_value=False))
-    ld.add_action(
-        DeclareBooleanLaunchArg("allow_trajectory_execution", default_value=True)
+    pkg_moveit_config = get_package_share_directory("panda_moveit_config")
+    urdf_file = os.path.join(pkg_moveit_config, "config", "panda.urdf.xacro")
+    srdf_file = os.path.join(pkg_moveit_config, "config", "panda.srdf")
+    trajectory_execution_file = os.path.join(
+        pkg_moveit_config, "config", "gripper_moveit_controllers.yaml"
     )
-    ld.add_action(
-        DeclareBooleanLaunchArg("publish_monitored_planning_scene", default_value=True)
+
+
+    # --- Build MoveIt config from panda_moveit_config ---
+    moveit_config = (
+        MoveItConfigsBuilder("panda", package_name="panda_moveit_config")
+        #.robot_description(file_path= urdf_file)  
+        #.robot_description_semantic(file_path= srdf_file)
+        #.trajectory_execution(file_path= trajectory_execution_file)
+        .robot_description(file_path="config/panda.urdf.xacro")   # MoveIt’s internal copy
+        .robot_description_semantic(file_path="config/panda.srdf")
+        .robot_description_kinematics(file_path="config/kinematics.yaml")
+        .trajectory_execution(file_path="config/gripper_moveit_controllers.yaml")
+        #.moveit_cpp(file_path="config/controller_setting.yaml")
+        .planning_pipelines(pipelines=["chomp" ]) #"ompl", "pilz_industrial_motion_planner"
+        .to_moveit_configs()
     )
-    # load non-default MoveGroup capabilities (space separated)
-    ld.add_action(DeclareLaunchArgument("capabilities", default_value=""))
-    # inhibit these default MoveGroup capabilities (space separated)
-    ld.add_action(DeclareLaunchArgument("disable_capabilities", default_value=""))
 
-    # do not copy dynamics information from /joint_states to internal robot monitoring
-    # default to false, because almost nothing in move_group relies on this information
-    ld.add_action(DeclareBooleanLaunchArg("monitor_dynamics", default_value=False))
+    #moveit_config.planning_pipelines["default_planning_pipeline"] = "ompl"
 
-    should_publish = LaunchConfiguration("publish_monitored_planning_scene")
+    # --- Nodes ---
+    robot_state_publisher = Node(
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        parameters=[moveit_config.robot_description],
+        output="screen"
+    )
 
-    move_group_configuration = {
-        "publish_robot_description_semantic": True,
-        "allow_trajectory_execution": LaunchConfiguration("allow_trajectory_execution"),
-        # Note: Wrapping the following values is necessary so that the parameter value can be the empty string
-        "capabilities": ParameterValue(
-            LaunchConfiguration("capabilities"), value_type=str
-        ),
-        "disable_capabilities": ParameterValue(
-            LaunchConfiguration("disable_capabilities"), value_type=str
-        ),
-        # Publish the planning scene of the physical robot so that rviz plugin can know actual robot
-        "publish_planning_scene": should_publish,
-        "publish_geometry_updates": should_publish,
-        "publish_state_updates": should_publish,
-        "publish_transforms_updates": should_publish,
-        "monitor_dynamics": False,
-    }
-
-    move_group_params = [
-        moveit_config.to_dict(),
-        move_group_configuration,
-    ]
-    move_group_params.append({"use_sim_time": True})
-
-    add_debuggable_node(
-        ld,
+    move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
-        commands_file=str(moveit_config.package_path / "launch" / "gdb_settings.gdb"),
         output="screen",
-        parameters=move_group_params,
-        extra_debug_args=["--debug"],
-        # Set the display variable, in case OpenGL code is used internally
-        additional_env={"DISPLAY": ":1"},
-    )
-    return ld
-
-def my_generate_moveit_rviz_launch(ld, moveit_config):
-    """Launch file for rviz"""
-
-    ld.add_action(DeclareBooleanLaunchArg("debug", default_value=False))
-    ld.add_action(
-        DeclareLaunchArgument(
-            "rviz_config",
-            default_value=str(moveit_config.package_path / "config/moveit.rviz"),
-        )
+        parameters=[moveit_config.to_dict(),
+                    {"use_sim_time": True},
+                    {"planning_plugin": "chomp_interface/CHOMPPlanner"},
+                    ],
     )
 
-    rviz_parameters = [
-        moveit_config.planning_pipelines,
-        moveit_config.robot_description_kinematics,
-    ]
-    rviz_parameters.append({"use_sim_time": True})
-
-    add_debuggable_node(
-        ld,
+    rviz_config = os.path.join(
+        get_package_share_directory("panda_moveit_config"),
+        "launch",
+        "moveit.rviz"
+    )
+    rviz_node = Node(
         package="rviz2",
         executable="rviz2",
-        output="log",
-        respawn=False,
-        arguments=["-d", LaunchConfiguration("rviz_config")],
-        parameters=rviz_parameters,
+        arguments=["-d", rviz_config],
+        parameters=[
+            {'use_sim_time': True},
+            moveit_config.robot_description,
+            moveit_config.robot_description_semantic,
+            moveit_config.planning_pipelines,
+            moveit_config.robot_description_kinematics,
+        ],
+        output="screen"
     )
 
-    return ld
+    static_tf_node = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        arguments=["0", "0", "0", "0", "0", "0", "world", "panda_link0"],
+    )
+
+    # ros2_control node
+    ros2_controllers_path = os.path.join(
+        get_package_share_directory("panda_moveit_config"), #panda_moveit_config
+        "config",
+        "ros2_controllers.yaml",
+    )
+
+    initial_positions_path = os.path.join( 
+        get_package_share_directory("panda_moveit_config"), "config", "initial_positions.yaml", 
+    )
+
+    ros2_control_node = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[ moveit_config.robot_description, ros2_controllers_path, {'use_sim_time': True}],
+        output="screen",
+    )
+
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
+    )
+
+    panda_arm_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["panda_arm_controller", "-c", "/controller_manager"],
+    )
+
+    panda_hand_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["panda_hand_controller", "-c", "/controller_manager"],
+    )
+
+    return LaunchDescription([
+        robot_state_publisher,
+        static_tf_node,
+        move_group_node,
+        rviz_node,
+        ros2_control_node,
+        joint_state_broadcaster_spawner,
+        panda_arm_controller_spawner,
+        panda_hand_controller_spawner,
+    ])

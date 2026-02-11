@@ -1,13 +1,17 @@
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/config/ros2_controllers.yaml
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/launch/panda_gazebo.launch.py
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/launch/panda_gazebo_moveit.launch.py
+/home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/arm_on_the_table.world
+/home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/pnp_table.world
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/test_world.world
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/arm_on_the_table.sdf
+/home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/on_the_table.world
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model-1_2.sdf
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model.config
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model-1_3.sdf
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model-1_4.sdf
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/sun/model.sdf
+/home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/new_arm_table.world
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model-1_2.sdf
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model.config
 /home/minis/ws_moveit2/install/panda_gazebo/share/panda_gazebo/worlds/ground_plane/model-1_3.sdf

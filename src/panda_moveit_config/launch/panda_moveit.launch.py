@@ -67,6 +67,7 @@ def generate_launch_description():
         executable="rviz2",
         arguments=["-d", rviz_config],
         parameters=[
+            {'use_sim_time': True},
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
             moveit_config.planning_pipelines,
@@ -95,7 +96,7 @@ def generate_launch_description():
     ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[ moveit_config.robot_description, ros2_controllers_path],
+        parameters=[ moveit_config.robot_description, ros2_controllers_path, {'use_sim_time': True}],
         output="screen",
     )
 
@@ -119,7 +120,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         #robot_state_publisher,
-        static_tf_node,
+        #static_tf_node,
         move_group_node,
         rviz_node,
         ros2_control_node,

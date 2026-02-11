@@ -70,7 +70,7 @@ def generate_launch_description():
     robot_state_publisher = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
-        parameters=[moveit_config.robot_description],
+         parameters=[{'use_sim_time': True}, params, {"publish_frequency":15.0}],
         output="screen"
     )
 
@@ -90,6 +90,18 @@ def generate_launch_description():
             '-y', '0.0', 
             '-z', '0.0'], 
         output='screen')
+    
+    load_joint_state_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'joint_state_broadcaster'],
+        output='screen'
+    )
+
+    load_arm_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'panda_arm_controller'],
+        output='screen'
+    )
 
     move_group_node = Node(
         package="moveit_ros_move_group",
@@ -163,9 +175,11 @@ def generate_launch_description():
 
     return LaunchDescription([
         start_gazebo_cmd,
-        #robot_state_publisher,
-        #joint_state_publisher_node,
+        robot_state_publisher,
+        joint_state_publisher_node,
         spawn_entity_cmd,
+        load_joint_state_controller,
+        load_arm_controller,
         static_tf_node,
         move_group_node,
         rviz_node,
