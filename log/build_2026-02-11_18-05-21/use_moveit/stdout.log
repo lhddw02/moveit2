@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target use_moveit[0m
+[ 50%] Built target get_pose
+[ 75%] [32mBuilding CXX object CMakeFiles/use_moveit.dir/src/use_moveit.cpp.o[0m

@@ -19,12 +19,16 @@ def remove_comments(text):
 def generate_launch_description():
     robot_name_in_model = 'panda'
     package_name = 'panda_description'
+    moveit_config_package_name = 'panda_moveit_config'
     urdf_name = "panda_description_gazebo.xacro"
+    xacro_name = "panda.urdf.xacro"
     
 
     #pkg_share = FindPackageShare(package=package_name).find(package_name) 
     pkg_share = get_package_share_directory(package_name)
     urdf_model_path = os.path.join(pkg_share, f'urdf/{urdf_name}')
+    # pkg_share = get_package_share_directory(moveit_config_package_name)
+    # urdf_model_path = os.path.join(pkg_share, f'config/{xacro_name}')
 
     
     
@@ -101,6 +105,12 @@ def generate_launch_description():
         output='screen'
     )
 
+    load_hand_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'panda_hand_controller'],
+        output='screen'
+    )
+
 ###################################################
     ros2_controllers_file = os.path.join(
         get_package_share_directory('panda_moveit_config'), 'config', 'ros2_controllers.yaml'
@@ -161,5 +171,6 @@ def generate_launch_description():
     ld.add_action(spawn_entity_cmd)
     ld.add_action(load_joint_state_controller)
     ld.add_action(load_arm_controller)
+    ld.add_action(load_hand_controller)
 
     return ld

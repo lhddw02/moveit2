@@ -1,0 +1,13 @@
+[01m[K/home/minis/ws_moveit2/src/use_moveit/src/use_moveit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/minis/ws_moveit2/src/use_moveit/src/use_moveit.cpp:10:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktd[m[K’ has not been declared
+   10 |   [01;31m[Ktd[m[K::shared_ptr<rclcpp::Node> node = std::make_shared<rclcpp::Node>(
+      |   [01;31m[K^~[m[K
+[01m[K/home/minis/ws_moveit2/src/use_moveit/src/use_moveit.cpp:10:30:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   10 |   td::shared_ptr<rclcpp::Node[01;31m[K>[m[K node = std::make_shared<rclcpp::Node>(
+      |                              [01;31m[K^[m[K
+[01m[K/home/minis/ws_moveit2/src/use_moveit/src/use_moveit.cpp:10:32:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   10 |   td::shared_ptr<rclcpp::Node> [01;31m[Knode[m[K = std::make_shared<rclcpp::Node>(
+      |                                [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/use_moveit.dir/build.make:76: CMakeFiles/use_moveit.dir/src/use_moveit.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/use_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

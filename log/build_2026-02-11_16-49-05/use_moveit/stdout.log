@@ -1,0 +1,55 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found moveit_ros_planning_interface: 2.5.9 (/home/minis/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.6.0 (/opt/ros/humble/share/parameter_traits/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_lifecycle: 16.0.17 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/minis/ws_moveit2/src/use_moveit/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/minis/ws_moveit2/build/use_moveit
+[35m[1mConsolidate compiler generated dependencies of target use_moveit[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/get_pose.dir/src/get_pose.cpp.o[0m
+[ 75%] Built target use_moveit
+[100%] [32m[1mLinking CXX executable get_pose[0m
+[100%] Built target get_pose
+-- Install configuration: ""
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/lib/use_moveit/use_moveit
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/lib/use_moveit/get_pose
+-- Set runtime path of "/home/minis/ws_moveit2/install/use_moveit/lib/use_moveit/get_pose" to ""
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/ament_index/resource_index/package_run_dependencies/use_moveit
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/ament_index/resource_index/parent_prefix_path/use_moveit
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/ament_prefix_path.sh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/path.sh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/path.dsv
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.bash
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.sh
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.zsh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.dsv
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/package.dsv
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/ament_index/resource_index/packages/use_moveit
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/cmake/use_moveitConfig.cmake
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/cmake/use_moveitConfig-version.cmake
+-- Up-to-date: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/package.xml

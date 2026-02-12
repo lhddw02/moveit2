@@ -4,7 +4,7 @@
     <xacro:macro name="panda_ros2_control" params="initial_positions_file ros2_control_hardware_type">
         <xacro:property name="initial_positions" value="${xacro.load_yaml(initial_positions_file)['initial_positions']}"/>
 
-        <ros2_control name="mock" type="system"> <!--GazeboSimSystem-->>
+        <ros2_control name="mock" type="system"> <!--GazeboSimSystem-->
             <hardware>
                 <xacro:if value="${ros2_control_hardware_type == 'mock_components'}">
                     <plugin>mock_components/GenericSystem</plugin>
@@ -85,19 +85,21 @@
             <joint name="panda_finger_joint1">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">0.0</param>
+                  <param name="initial_value">${initial_positions['panda_finger_joint1']}</param>
                 </state_interface>
                 <state_interface name="velocity">
                   <param name="initial_value">0.0</param>
                 </state_interface>
             </joint>
             <joint name="panda_finger_joint2">
-                <command_interface name="position"/>
+                <param name="mimic">panda_finger_joint1</param>
+                <param name="multiplier">1</param>
+                
                 <state_interface name="position">
                   <param name="initial_value">0.0</param>
                 </state_interface>
                 <state_interface name="velocity">
-                  <param name="initial_value">0.0</param>
+                    <param name="initial_value">0.0</param>
                 </state_interface>
             </joint>  
         </ros2_control>

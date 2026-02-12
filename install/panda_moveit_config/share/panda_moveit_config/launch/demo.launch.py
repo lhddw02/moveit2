@@ -7,6 +7,7 @@ from launch_ros.actions import Node
 from launch.actions import ExecuteProcess
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
+from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
@@ -17,6 +18,25 @@ def generate_launch_description():
         default_value="mock_components",
         description="ROS2 control hardware interface type to use for the launch file -- possible values: [mock_components, isaac]",
     )
+
+
+    should_publish = LaunchConfiguration("publish_monitored_planning_scene")
+
+    move_group_configuration = {
+        "publish_robot_description_semantic": True,
+        "allow_trajectory_execution": True,
+        # Note: Wrapping the following values is necessary so that the parameter value can be the empty string
+        #"capabilities": ParameterValue(LaunchConfiguration("capabilities"), value_type=str),
+        #"disable_capabilities": ParameterValue(LaunchConfiguration("disable_capabilities"), value_type=str),
+        # Publish the planning scene of the physical robot so that rviz plugin can know actual robot
+        "publish_planning_scene": True,
+        "publish_geometry_updates": True,
+        "publish_state_updates": True,
+        "publish_transforms_updates": True,
+        "monitor_dynamics": False,
+        
+    }
+
 
     moveit_config = (
         MoveItConfigsBuilder("panda")       # package_name="panda_moveit_config"
@@ -29,9 +49,10 @@ def generate_launch_description():
             },
         )
         .robot_description_semantic(file_path="config/panda.srdf")
+        .robot_description_kinematics(file_path="config/kinematics.yaml")
         .trajectory_execution(file_path="config/gripper_moveit_controllers.yaml")
         .planning_pipelines(
-            pipelines=["ompl", "chomp", "pilz_industrial_motion_planner"]
+            pipelines=["chomp", "ompl"] #["chomp", "ompl", "pilz_industrial_motion_planner"]
         )
         .to_moveit_configs()
     )
@@ -41,7 +62,10 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict()],
+        parameters=[moveit_config.to_dict(),
+                    move_group_configuration,
+                    {"use_sim_time": True},
+                    ],
         arguments=["--ros-args", "--log-level", "info"],
     )
 

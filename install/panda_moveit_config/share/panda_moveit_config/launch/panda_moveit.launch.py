@@ -21,6 +21,16 @@ def generate_launch_description():
         pkg_moveit_config, "config", "gripper_moveit_controllers.yaml"
     )
 
+    move_group_configuration = {
+        "publish_robot_description_semantic": True,
+        "allow_trajectory_execution": True,
+        "publish_planning_scene": True,
+        "publish_geometry_updates": True,
+        "publish_state_updates": True,
+        "publish_transforms_updates": True,
+        "monitor_dynamics": False,
+        
+    }
 
     # --- Build MoveIt config from panda_moveit_config ---
     moveit_config = (
@@ -33,7 +43,7 @@ def generate_launch_description():
         .robot_description_kinematics(file_path="config/kinematics.yaml")
         .trajectory_execution(file_path="config/gripper_moveit_controllers.yaml")
         #.moveit_cpp(file_path="config/controller_setting.yaml")
-        .planning_pipelines(pipelines=["chomp" ]) #"ompl", "pilz_industrial_motion_planner"
+        .planning_pipelines(pipelines=["chomp","ompl", "pilz_industrial_motion_planner" ])
         .to_moveit_configs()
     )
 
@@ -52,6 +62,7 @@ def generate_launch_description():
         executable="move_group",
         output="screen",
         parameters=[moveit_config.to_dict(),
+                    move_group_configuration,
                     {"use_sim_time": True},
                     {"planning_plugin": "chomp_interface/CHOMPPlanner"},
                     ],

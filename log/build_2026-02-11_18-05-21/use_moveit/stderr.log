@@ -1,0 +1,7 @@
+[01m[K/home/minis/ws_moveit2/src/use_moveit/src/use_moveit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/minis/ws_moveit2/src/use_moveit/src/use_moveit.cpp:21:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’ has no member named ‘[01m[KwaitForServers[m[K’
+   21 |   move_group_interface.[01;31m[KwaitForServers[m[K();
+      |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/use_moveit.dir/build.make:76: CMakeFiles/use_moveit.dir/src/use_moveit.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/use_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

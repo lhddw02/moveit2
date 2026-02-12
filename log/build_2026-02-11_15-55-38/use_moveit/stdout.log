@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/use_moveit.dir/src/use_moveit.cpp.o[0m
+[100%] [32m[1mLinking CXX executable use_moveit[0m
+[100%] Built target use_moveit
+-- Install configuration: ""
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/lib/use_moveit/use_moveit
+-- Set runtime path of "/home/minis/ws_moveit2/install/use_moveit/lib/use_moveit/use_moveit" to ""
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/ament_index/resource_index/package_run_dependencies/use_moveit
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/ament_index/resource_index/parent_prefix_path/use_moveit
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/ament_prefix_path.sh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/ament_prefix_path.dsv
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/path.sh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/environment/path.dsv
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.bash
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.sh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.zsh
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/local_setup.dsv
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/package.dsv
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/ament_index/resource_index/packages/use_moveit
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/cmake/use_moveitConfig.cmake
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/cmake/use_moveitConfig-version.cmake
+-- Installing: /home/minis/ws_moveit2/install/use_moveit/share/use_moveit/package.xml
