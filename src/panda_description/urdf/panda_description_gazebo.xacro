@@ -293,6 +293,15 @@
   </joint>
   <link name="random"/>
 
+  <!-- Camera -->
+  <xacro:include filename="$(find panda_description)/urdf/camera/camera.xacro"/>
+  <xacro:camera_v0 parent="panda_link0">
+   <origin xyz="0.2 0.6 0.7" rpy="0 1.57 0"/>
+  </xacro:camera_v0>
+  
+  <xacro:camera_gazebo_v0/>
+  <!-- Camera -->
+
 
   <ros2_control name="GazeboSystem" type="system">
       <hardware>
@@ -390,12 +399,12 @@
         </joint>
   </ros2_control>
 
-  <!-- gazebo -->
+
   <gazebo>
     <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
         <parameters> $(find panda_gazebo)/config/ros2_controllers.yaml </parameters>
         <robot_param_node>robot_state_publisher</robot_param_node>
     </plugin>
   </gazebo>
- 
+  
 </robot>

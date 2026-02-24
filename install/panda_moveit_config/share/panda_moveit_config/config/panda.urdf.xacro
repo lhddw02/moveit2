@@ -8,13 +8,13 @@
     <!-- <xacro:include filename="$(find panda_description)/urdf/panda.urdf" /> -->
     <xacro:include filename="$(find panda_description)/urdf/panda_description.xacro" />
     <!-- <xacro:include filename="$(find panda_description)/urdf/panda_description_gazebo.xacro" /> -->
-    <!-- <xacro:include filename="$(find panda_description)/urdf/camera/camera.xacro"/> -->
+      <xacro:include filename="$(find panda_description)/urdf/camera/camera.xacro"/>
 
     <!-- Camera -->
-    <!-- <xacro:camera_v0 parent="panda_link0">
+    <xacro:camera_v0 parent="panda_link0">
 	    <origin xyz="0.2 0.6 0.7" rpy="0 ${PI/2} 0"/>
     </xacro:camera_v0>
-    <xacro:camera_gazebo_v0/> -->
+    <!-- <xacro:camera_gazebo_v0/> -->
 
     <!-- controllers for gazebo -->
     <!-- <xacro:include filename="panda.gazebo_ros2_control.xacro" />  -->
@@ -28,27 +28,21 @@
         <parameters> $(find panda_gazebo)/config/ros2_controllers.yaml </parameters>
         <robot_param_node>robot_state_publisher</robot_param_node>
       </plugin>
-    </gazebo>
-  <!-- <gazebo>
-    <plugin
-        filename="gz_ros2_control-system"
-        name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-        <parameters>$(find panda_moveit_config)/config/ros2_controllers.yaml</parameters>
-    </plugin>
-    <plugin
-        filename="gz-sim-joint-state-publisher-system"
-        name="gz::sim::systems::JointStatePublisher">
-    </plugin>
-    <plugin
-        filename="gz-sim-pose-publisher-system"
-        name="gz::sim::systems::PosePublisher">
-        <publish_link_pose>true</publish_link_pose>
-        <use_pose_vector_msg>true</use_pose_vector_msg>
-        <publish_nested_model_pose>true</publish_nested_model_pose>
-    </plugin>
 
-    <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
-      <render_engine>ogre2</render_engine>
-    </plugin>
-  </gazebo> -->
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>rrbot/camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </gazebo>
+  
 </robot>
